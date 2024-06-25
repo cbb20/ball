@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Chart with D3.js</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chart {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+        .line {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <svg class="chart"></svg>
+    <script src="line.js"></script>
+    <script>
+        line({'Q1': 5, 'Q2': 6, 'Q3': 8, 'Q4': 1});
+    </script>
+</body>
+</html>

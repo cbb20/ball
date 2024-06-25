@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Chart with D3.js</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chart {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: darkorange;
+        }
+        .axis-label {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <svg class="chart"></svg>
+    <script src="histogram.js"></script>
+    <script>
+        histogram({'Q1': 0.2, 'Q2': 0.3, 'Q3': 0.1, 'Q4': 0.4});
+    </script>
+</body>
+</html>

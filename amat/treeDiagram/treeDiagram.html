@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Diagram with D3.js</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chart {
+            display: block;
+            margin: auto;
+            width: 800px;
+            height: 500px;
+        }
+        .link {
+            fill: none;
+            stroke: #555;
+            stroke-opacity: 0.4;
+            stroke-width: 1.5px;
+        }
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 3px;
+        }
+        .node text {
+            font: 12px sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <svg class="chart"></svg>
+    <script src="treeDiagram.js"></script>
+    <script>
+        treeDiagram({'Q1': 0.2, 'Q2': 0.3, 'Q3': 0.1, 'Q4': 0.4});
+    </script>
+</body>
+</html>

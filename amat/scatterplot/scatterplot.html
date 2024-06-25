@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter Plot with D3.js</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chart {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+        .dot {
+            fill: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <svg class="chart"></svg>
+    <!-- 注意确保scatterplot.js文件名与此处一致 -->
+    <script src="scatterplot.js"></script>
+    <!-- 调用 scatterPlot 函数 -->
+    <script>
+        scatterPlot({'Q1': 0.2, 'Q2': 0.3, 'Q3': 0.1, 'Q4': 0.4});
+    </script>
+</body>
+</html>
